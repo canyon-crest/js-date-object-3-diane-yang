@@ -29,7 +29,12 @@
 
 // STEP 5: Display the day name in the element with ID "warmUpDate"
 //         using document.getElementById("warmUpDate").innerHTML
+let now = new Date();
+let dayNumber = now.getDay();
 
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];;
+let day = days[dayNumber]
+document.getElementById("warmUpDate").innerHTML = day;
 
 // ============================================
 //  PART 1: Current Date Display
@@ -50,7 +55,7 @@
 
 // STEP 10: Build the date string: month + "/" + day + "/" + year
 //          Display it in the element with ID "myDate"
-
+getElementbyID.myDate
 
 // ============================================
 //  PART 2: Elapsed Timer
