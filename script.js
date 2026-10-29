@@ -55,7 +55,12 @@ document.getElementById("warmUpDate").innerHTML = day;
 
 // STEP 10: Build the date string: month + "/" + day + "/" + year
 //          Display it in the element with ID "myDate"
-getElementbyID.myDate
+let date = new Date();
+let month = date.getMonth()+1;
+let day1 = date.getDate();
+let year = date.getFullYear();
+document.getElementById("myDate").innerHTML = month + "/" + day1 + "/" + year;
+
 
 // ============================================
 //  PART 2: Elapsed Timer
